@@ -14,16 +14,16 @@
     <nav>
       <ul class="menu">
         <li>
-          <a href="winery.html"><h1>WINERY</h1></a>
+          <a href="winery.html" id="winery"><h1>WINERY</h1></a>
         </li>
         <li>
-          <a href="wines.html"><h1>WINES</h1></a>
+          <a href="wines.html" id="wines"><h1>WINES</h1></a>
         </li>
         <li>
-          <a href="order.html"><h1>ORDER</h1></a>
+          <a href="order.html" id="order"><h1>ORDER</h1></a>
         </li>
         <li>
-          <a href="contact.html"><h1>CONTACT</h1></a>
+          <a href="contact.html" id="contact"><h1>CONTACT</h1></a>
         </li>
       </ul>
 
@@ -59,6 +59,13 @@
             <div class="hoverImg">
               <img src="public/bas_630_hover.webp" alt="BAS 630 wine opening" />
             </div>
+            <h2>BAS 630</h2>
+            <h2>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+              placeat vero facilis iste beatae excepturi magni, ad unde
+              recusandae mollitia soluta velit exercitationem! Ullam voluptatem
+              officiis velit voluptatum omnis culpa?
+            </h2>
           </div>
         </a>
       </div>
@@ -75,6 +82,11 @@
       </footer>
       <script src="script.js"></script>
       <script src="menu.js"></script>
+      <script>
+        document.getElementById("wines").style.textDecoration = "underline";
+        document.getElementById("wines").style.textDecorationThickness =
+          "1.5px";
+      </script>
     </main>
   </body>
 </html>

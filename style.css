@@ -2,12 +2,6 @@ main {
   margin: 20px;
   position: relative;
 }
-ul li.active a {
-  text-decoration: underline;
-}
-.active a {
-  text-decoration: underline;
-}
 
 em {
   text-decoration: underline;
@@ -84,6 +78,10 @@ body {
   justify-content: space-between;
 } */
 
+.locations {
+  padding-top: 20px;
+}
+
 .price_list {
   display: flex;
 }
@@ -99,11 +97,13 @@ body {
 }
 
 footer {
-  position: fixed;
+  position: relative;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
-  margin: 20px;
+  display: flex;
+  te
 }
 
 .splash_slide {

@@ -14,16 +14,16 @@
     <nav>
       <ul class="menu">
         <li>
-          <a href="winery.html"><h1>WINERY</h1></a>
+          <a href="winery.html" id="winery"><h1>WINERY</h1></a>
         </li>
         <li>
-          <a href="wines.html"><h1>WINES</h1></a>
+          <a href="wines.html" id="wines"><h1>WINES</h1></a>
         </li>
         <li>
-          <a href="order.html"><h1>ORDER</h1></a>
+          <a href="order.html" id="order"><h1>ORDER</h1></a>
         </li>
         <li>
-          <a href="contact.html"><h1>CONTACT</h1></a>
+          <a href="contact.html" id="contact"><h1>CONTACT</h1></a>
         </li>
       </ul>
 
@@ -57,11 +57,14 @@
             <em>info@baswinery.dk</em> or call us at (+45) 5151 9958
           </h2>
         </div>
-        <div>
+        <div class="locations">
+          <br />
           <h2>BAS WINERY</h2>
           <h2>CVR. 4398 6902</h2>
+          <br />
           <h2>ADMINISTRATION</h2>
           <h2>Bjørnsmosevej 6, 2500 Valby Denmark</h2>
+          <br />
           <h2>PRODUCTION</h2>
           <h2>Basnæsevej 22, 4780 Stege Denmark</h2>
         </div>
@@ -78,6 +81,11 @@
       </footer>
       <script src="script.js"></script>
       <script src="menu.js"></script>
+      <script>
+        document.getElementById("contact").style.textDecoration = "underline";
+        document.getElementById("contact").style.textDecorationThickness =
+          "1.5px";
+      </script>
     </main>
   </body>
 </html>
