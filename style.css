@@ -78,10 +78,6 @@ body {
   justify-content: space-between;
 } */
 
-.locations {
-  padding-top: 20px;
-}
-
 .price_list {
   display: flex;
 }
@@ -104,10 +100,7 @@ footer {
   width: 100%;
   display: flex;
   margin-top: 100px;
-}
-
-.footerdiv2 {
-  place-items: end;
+  place-content: space-between;
 }
 
 .splash_slide {
@@ -159,6 +152,10 @@ nav {
   align-items: center;
 }
 
+.winelist {
+  display: inline-block;
+}
+
 .menu {
   display: flex;
   list-style: none;
@@ -205,6 +202,16 @@ nav {
   display: none;
 }
 @media screen and (max-width: 800px) {
+  footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline;
+    margin: 200px;
+  }
+
   .imageBox {
     position: relative;
     float: left;
