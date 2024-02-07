@@ -154,6 +154,7 @@ nav {
 
 .winelist {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .menu {
