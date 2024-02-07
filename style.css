@@ -103,6 +103,11 @@ footer {
   bottom: 0;
   width: 100%;
   display: flex;
+  margin-top: 100px;
+}
+
+.footerdiv2 {
+  place-items: end;
 }
 
 .splash_slide {
