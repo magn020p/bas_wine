@@ -153,8 +153,12 @@ nav {
 }
 
 .winelist {
-  display: inline-block;
-  vertical-align: middle;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.winelistbox {
+  margin: 20px;
 }
 
 .menu {
@@ -203,6 +207,13 @@ nav {
   display: none;
 }
 @media screen and (max-width: 800px) {
+  .winelist {
+    display: inline-block;
+    vertical-align: middle;
+    columns: unset;
+    align-content: center;
+  }
+
   footer {
     position: relative;
     top: 0;
