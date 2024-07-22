@@ -7,65 +7,59 @@
     <link rel="stylesheet" href="https://use.typekit.net/txz0xcy.css" />
     <title>Contact</title>
   </head>
-  <header>
-    <div class="logo">
-      <a href="index.html">BAS</a>
-    </div>
-    <nav>
-      <ul class="menu">
-        <li>
-          <a href="winery.html" id="winery"><h1>WINERY</h1></a>
-        </li>
-        <li>
-          <a href="wines.html" id="wines"><h1>WINES</h1></a>
-        </li>
-        <li>
-          <a href="order.html" id="order"><h1>ORDER</h1></a>
-        </li>
-        <li>
-          <a href="contact.html" id="contact"><h1>CONTACT</h1></a>
-        </li>
-      </ul>
-
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-  </header>
 
   <body>
+    <header>
+      <div class="logo_box">
+        <a href="index.html" class="logo">BAS</a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li>
+            <a href="winery.html" id="winery">WINERY</a>
+          </li>
+          <li>
+            <a href="wines.html" id="wines">WINES</a>
+          </li>
+          <li>
+            <a href="order.html" id="order">ORDER</a>
+          </li>
+          <li>
+            <a href="contact.html" id="contact">CONTACT</a>
+          </li>
+        </ul>
+
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
     <main>
       <div class="grid_2-1">
         <div class="h1_text">
-          <h2>
+          <p>
             For any enquiries other than ordering wine, please email
-            <em>info@baswinery.dk</em> or call us at (+45) 5151 9958
-          </h2>
+            <a href="mailto:info@baswinery.dk" class="email">
+              info@baswinery.dk
+            </a>
+            or call us at (+45) 5151 9958
+          </p>
+          <img class="field" src="public/IMG_1243-kopi.webp" alt="winefields" />
         </div>
-        <div class="locations">
-          <br />
-          <h2>BAS WINERY</h2>
-          <h2>CVR. 4398 6902</h2>
-          <br />
-          <h2>ADMINISTRATION</h2>
-          <h2>Bjørnsmosevej 6, 2500 Valby Denmark</h2>
-          <br />
-          <h2>PRODUCTION</h2>
-          <h2>Basnæsevej 22, 4780 Stege Denmark</h2>
+        <div>
+          <p>BAS WINERY</p>
+          <p>CVR. 4398 6902</p>
+
+          <p>ADMINISTRATION</p>
+          <p>Bjørnsonsvej 6, 2500 Valby Denmark</p>
+
+          <p>PRODUCTION</p>
+          <p>Basnæsevej 22, 4780 Stege Denmark</p>
         </div>
       </div>
-      <footer>
-        <div>
-          <h3>BAS WINERY</h3>
-          <h3>BASNÆSVEJ 22 4780 STEGE, MØN</h3>
-          <h3>INFO@BASWINERY.DK TEL. (+45) 5151 9958</h3>
-        </div>
-        <div>
-          <h3>SE FØDEVARESTYRELSENS SMILEY RAPPORT</h3>
-        </div>
-      </footer>
+
       <script src="script.js"></script>
       <script src="menu.js"></script>
       <script>
@@ -74,5 +68,17 @@
           "1.5px";
       </script>
     </main>
+    <footer>
+      <div>
+        <div>
+          <h3 class="footer_text">INFO@BASWINERY.DK</h3>
+        </div>
+      </div>
+      <div class="right_footer">
+        <div>
+          <p class="footer_text">TEL. 5151 9958</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

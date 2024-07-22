@@ -1,7 +1,42 @@
 * {
   box-sizing: border-box;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
 }
-.carousel {
+
+.mobil-tekst {
+  margin-bottom: 100px;
+}
+
+main {
+  margin: 20px;
+}
+
+.grid_2-1 img {
+  margin-top: 20px;
+}
+
+.col_2 p {
+  font-size: 18px;
+}
+
+.col_2 li {
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.locations {
+  font-size: 22px;
+}
+
+.background-video {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* .carousel {
   position: relative;
   width: 100%;
   height: 1000px;
@@ -21,14 +56,15 @@
       height: 100%;
     }
   }
+} */
+
+.forside_billede {
+  height: auto;
+  margin-bottom: 220px;
+  width: 100%;
 }
 
-main {
-  margin: 20px;
-  position: relative;
-}
-
-em {
+.email {
   text-decoration: underline;
 }
 
@@ -48,7 +84,7 @@ em {
   max-width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .grid_2-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -59,6 +95,14 @@ em {
 
   .col_2 {
     font-size: 12px;
+  }
+
+  .winelistbox {
+    flex: 0 0 auto;
+    width: 20%;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 100px;
   }
 }
 
@@ -80,18 +124,38 @@ li {
   text-decoration: none;
   list-style-type: none;
 }
-h1 {
+
+ul {
   font-family: "freight-macro-pro", serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   font-size: x-large;
 }
 
-a,
+p {
+  font-family: "freight-macro-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: normal;
+}
+
+h1 {
+  font-family: "freight-macro-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: x-large;
+}
+
+a {
+  font-family: "freight-macro-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 ul,
 li {
   font-family: "freight-macro-pro", serif;
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -100,6 +164,43 @@ h3 {
   font-family: "freight-macro-pro", serif;
   font-weight: 400;
   font-style: normal;
+  font-size: x-large;
+}
+
+footer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  place-content: space-between;
+  background-color: var(--BAS-Green);
+}
+
+footer p {
+  font-family: "freight-macro-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+footer h3 {
+  font-family: "freight-macro-pro", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
+.footer_text {
+  color: var(--BAS-Off-White);
+  margin: 12px;
+}
+
+.right_footer {
+  display: inline-block;
+  align-self: flex-end;
 }
 
 /* .container {
@@ -129,22 +230,38 @@ body {
   font-size: xx-large;
 }
 
-footer {
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  margin-top: 100px;
-  place-content: space-between;
-}
-
 .splash_slide {
   height: auto;
   max-width: 100%;
   margin: 0px;
   padding: 0px;
+}
+
+header {
+  /* position: sticky;
+  top: 0; */
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  background-color: var(--BAS-Off-White);
+}
+
+.logo {
+  font-family: "freight-macro-pro", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin-bottom: 15px;
 }
 
 .imageBox {
@@ -163,41 +280,21 @@ footer {
   display: block;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-bottom: 50px;
-}
-
-.logo img {
-  width: 80px;
-  height: 80px;
-}
-
-.logo {
-  font-family: "freight-macro-pro", serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 50px;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-}
-
 .winelist {
-  display: flex;
+  /* display: flex;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center; */
 
-  justify-content: center;
-}
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 
-.winelistbox {
-  margin: 60px;
+  img {
+    width: 100%;
+  }
+  /* img {
+    width: 38%;
+  } */
 }
 
 .menu {
@@ -216,12 +313,8 @@ nav {
 }
 
 .menu a {
-  display: block;
-  padding: 1px;
   color: var(--BAS-Green);
   text-decoration: none;
-  transition: color 0.3s;
-  text-align: end;
 }
 
 .menu a:hover {
@@ -229,30 +322,27 @@ nav {
   text-decoration-thickness: 1.5px;
 }
 
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: var(--BAS-Green);
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-.burger {
-  display: none;
-}
-
 @media screen and (max-width: 800px) {
+  img {
+    width: 100%;
+  }
+
+  .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--BAS-Green);
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+
   .winelist {
     display: inline-block;
-    margin: 20px;
-  }
-  .winelistbox {
-    margin: 20px;
   }
 
   footer {
@@ -261,21 +351,15 @@ nav {
     left: 0;
     bottom: 0;
     width: 100%;
-    display: inline;
-    margin: 200px;
+    display: block;
+    margin-top: 100px;
+    place-content: space-between;
+    background-color: var(--BAS-Green);
   }
 
-  .imageBox {
-    position: relative;
-    float: left;
-    margin-bottom: 60px;
-  }
-
-  .imageBox .hoverImg {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: none;
+  footer h3,
+  p {
+    margin: 0;
   }
 
   .imageBox:hover .hoverImg {
@@ -304,7 +388,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #fff;
+    background-color: var(--BAS-Green);
     position: absolute;
     top: 100px;
     left: 0;
@@ -313,13 +397,19 @@ nav {
   }
 
   nav.active .menu li {
-    margin: 10px 20px;
+    margin: 20px;
+  }
+
+  .menu a {
+    display: block;
+    padding: 1px;
+    color: var(--BAS-Off-White);
+    text-decoration: none;
+
+    text-align: end;
   }
 
   nav.active .menu a {
     font-size: 24px;
-  }
-  header {
-    padding: 20px;
   }
 }

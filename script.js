@@ -37,9 +37,3 @@ window.onload = function () {
     }
   }, 4000);
 };
-
-$("#menu li").click(function (e) {
-  e.preventDefault(); //Remove this in your main code
-  $("#menu li").removeClass("active");
-  $(this).addClass("active");
-});
