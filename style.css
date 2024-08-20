@@ -34,6 +34,12 @@ main {
 .background-video {
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.order-video {
+  width: 100%;
+  margin-top: 20px;
 }
 
 /* .carousel {
@@ -137,6 +143,7 @@ p {
   font-weight: 400;
   font-style: normal;
   font-size: normal;
+  font-size: 18px;
 }
 
 h1 {
@@ -218,10 +225,19 @@ body {
 
 .price_list {
   display: flex;
+  margin-bottom: 240px;
+}
+
+.price_list_titel {
+  margin-top: 20px;
 }
 
 .price_list_wine {
-  margin-right: 60px;
+  margin-right: auto;
+}
+
+.price_list_numbers {
+  margin-right: auto;
 }
 
 .overskrift_side {
@@ -327,6 +343,10 @@ img {
     width: 100%;
   }
 
+  .info_contact {
+    margin-bottom: 20px;
+  }
+
   .burger {
     width: 30px;
     height: 20px;
@@ -345,26 +365,11 @@ img {
     display: inline-block;
   }
 
-  footer {
-    position: relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    display: block;
-    margin-top: 100px;
-    place-content: space-between;
-    background-color: var(--BAS-Green);
-  }
-
   footer h3,
   p {
     margin: 0;
   }
 
-  .imageBox:hover .hoverImg {
-    display: none;
-  }
   .menu {
     display: none;
   }
