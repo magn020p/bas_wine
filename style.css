@@ -5,6 +5,10 @@
   margin-bottom: 0;
 }
 
+.linethrough {
+  text-decoration-line: line-through;
+}
+
 .mobil-tekst {
   margin-bottom: 100px;
 }
