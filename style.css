@@ -9,6 +9,15 @@
   text-decoration-line: line-through;
 }
 
+.vintage {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.vintage:hover {
+  text-decoration: underline;
+}
+
 .mobil-tekst {
   margin-bottom: 100px;
 }
@@ -229,7 +238,6 @@ body {
 
 .price_list {
   display: flex;
-  margin-bottom: 240px;
 }
 
 .price_list_titel {
@@ -241,6 +249,22 @@ body {
 }
 
 .price_list_numbers {
+  margin-right: auto;
+}
+
+.coming_soon {
+  display: flex;
+}
+
+.coming_soon_titel {
+  margin-top: 20px;
+}
+
+.coming_soon_wine {
+  margin-right: auto;
+}
+
+.coming_soon_numbers {
   margin-right: auto;
 }
 
